@@ -1,0 +1,589 @@
+/* Reset and base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    line-height: 1.6;
+    color: #2d2d32;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Navigation */
+.navbar {
+    background: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+}
+
+.navbar .container .logo {
+    display: flex;
+    align-items:first baseline;
+}
+
+.logo img {
+    height: 40px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #2d2d32;
+    margin: 0 15px;
+    font-size: 15px;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+    color: #14bef0;
+}
+
+.login-btn {
+    background: transparent;
+    border: 1px solid #14bef0;
+    color: #14bef0;
+    padding: 8px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.3s;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.login-btn:hover {
+    background: #14bef0;
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Search Section */
+.search-section {
+    margin-top: 80px;
+    padding: 40px 0;
+    background: #f8f9fa;
+}
+
+.search-box {
+    display: flex;
+    gap: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.search-input {
+    flex: 1;
+    position: relative;
+}
+
+.search-input i {
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #787887;
+}
+
+.search-input input {
+    width: 100%;
+    padding: 15px 15px 15px 45px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+/* Service Cards Section */
+.services {
+    padding: 40px 0;
+    background: #f8f9fa;
+}
+
+.service-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.service-card {
+    background: #fff;
+    border-radius: 12px;
+    padding: 24px;
+    text-align: center;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+    position: relative;
+    overflow: hidden;
+}
+
+/* Unique background colors for each card */
+.service-card:nth-child(1) {
+    background: linear-gradient(135deg, #e1f5fe 0%, #fff 100%);
+}
+
+.service-card:nth-child(2) {
+    background: linear-gradient(135deg, #e8f5e9 0%, #fff 100%);
+}
+
+.service-card:nth-child(3) {
+    background: linear-gradient(135deg, #fff3e0 0%, #fff 100%);
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+.service-card img {
+    width: 300px;
+    height: 200px;
+    object-fit: contain;
+    margin-bottom: 16px;
+    transition: transform 0.3s ease;
+    align-content: center;
+}
+
+.service-card:hover img {
+    transform: scale(1.05);
+}
+
+.service-card h3 {
+    color: #2d2d32;
+    font-size: 18px;
+    margin-bottom: 8px;
+    font-weight: 500;
+}
+
+.service-card p {
+    color: #787887;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.service-card button {
+    background: #14bef0;
+    color: white;
+    border: none;
+    padding: 10px 24px;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.service-card button:hover {
+    background: #0d9bc7;
+}
+
+/* Specialists Section */
+.specialists {
+    padding: 60px 0;
+    background: #fff;
+}
+
+.specialists h2 {
+    text-align: center;
+    font-size: 32px;
+    /* Increased from 24px */
+    margin-bottom: 12px;
+    color: #2d2d32;
+    font-weight: 600;
+}
+
+.section-subtitle {
+    text-align: center;
+    color: #787887;
+    margin-bottom: 40px;
+    font-size: 18px;
+    /* Increased from default */
+    line-height: 1.5;
+}
+
+.specialist-cards {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    overflow-x: auto;
+    padding: 20px 0;
+    gap: 30px;
+    scrollbar-width: none;
+    /* Firefox */
+    -ms-overflow-style: none;
+    /* IE and Edge */
+}
+
+.specialist-cards::-webkit-scrollbar {
+    display: none;
+    /* Chrome, Safari, Opera */
+}
+
+.specialist-card {
+    min-width: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+}
+
+.specialist-icon {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background: #f0f4f8;
+    padding: 20px;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+}
+
+.specialist-icon:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.specialist-icon img {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+}
+
+.specialist-card h4 {
+    font-size: 15px;
+    color: #2d2d32;
+    margin-bottom: 8px;
+    min-height: 40px;
+}
+
+.specialist-card p {
+    font-size: 13px;
+    color: #787887;
+    margin-bottom: 12px;
+}
+
+.consult-btn {
+    background: transparent;
+    color: #14bef0;
+    border: 1px solid #14bef0;
+    padding: 8px 16px;
+    border-radius: 4px;
+    font-size: 13px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    white-space: nowrap;
+}
+
+.consult-btn:hover {
+    background: #14bef0;
+    color: #fff;
+}
+
+.view-all-btn {
+    display: block;
+    margin: 30px auto 0;
+    padding: 12px 24px;
+    background: transparent;
+    border: 1px solid #14bef0;
+    color: #14bef0;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.view-all-btn:hover {
+    background: #14bef0;
+    color: #fff;
+}
+
+/* App Download Section */
+.app-download {
+    padding: 80px 0;
+    background: #f7f8f9;
+}
+
+.app-content {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+    flex-direction: row-reverse;
+    /* This will move the image to the left */
+}
+
+.app-info {
+    flex: 1;
+    max-width: 600px;
+}
+
+.app-info h2 {
+    font-size: 32px;
+    color: #2d2d32;
+    margin-bottom: 16px;
+}
+
+.app-info p {
+    color: #787887;
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 32px;
+}
+
+.app-form h3 {
+    font-size: 18px;
+    color: #2d2d32;
+    margin-bottom: 16px;
+}
+
+.phone-input {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 32px;
+}
+
+.country-code {
+    background: #fff;
+    padding: 12px 16px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    color: #414146;
+    font-weight: 500;
+}
+
+.phone-input input {
+    flex: 1;
+    padding: 12px 16px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 15px;
+}
+
+.send-sms-btn {
+    background: #14bef0;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 4px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.send-sms-btn:hover {
+    background: #0d9bc7;
+}
+
+.store-buttons {
+    display: flex;
+    gap: 16px;
+}
+
+.store-btn img {
+    height: 48px;
+    width: auto;
+    transition: transform 0.3s ease;
+}
+
+.store-btn:hover img {
+    transform: translateY(-2px);
+}
+
+.app-image {
+    flex: 1;
+    display: flex;
+    justify-content: flex-start;
+    /* Align image to the left */
+    margin-left: 20px;
+    /* Add some spacing from the left edge */
+}
+
+.app-image img {
+    max-width: 100%;
+    height: auto;
+    max-height: 500px;
+}
+
+/* Footer Styles */
+.footer {
+    background: #28328c;
+    color: #fff;
+    padding: 60px 0 0;
+}
+
+.footer-content {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 30px;
+    margin-bottom: 40px;
+}
+
+.footer-column h3 {
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-column ul li {
+    margin-bottom: 12px;
+}
+
+.footer-column ul li a {
+    color: rgba(255, 255, 255, 0.8);
+    text-decoration: none;
+    font-size: 14px;
+    transition: color 0.2s;
+}
+
+.footer-column ul li a:hover {
+    color: #fff;
+}
+
+.footer-bottom {
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-bottom .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.logo-white img {
+    height: 30px;
+    margin-bottom: 10px;
+}
+
+.footer-bottom p {
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 14px;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .service-cards {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+
+    .specialist-cards {
+        justify-content: flex-start;
+        padding-bottom: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+    }
+
+    .search-box {
+        flex-direction: column;
+    }
+
+    .service-card img {
+        width: 140px;
+        height: 140px;
+    }
+
+    .service-cards,
+    .specialist-cards {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 16px;
+    }
+
+    .specialist-icon {
+        width: 100px;
+        height: 100px;
+    }
+
+    .specialist-icon img {
+        width: 50px;
+        height: 50px;
+    }
+}
+
+@media (max-width: 480px) {
+    .specialist-cards {
+        grid-template-columns: 1fr;
+    }
+
+    .store-buttons {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .store-buttons img {
+        height: 35px;
+    }
+}
+
+@media (max-width: 992px) {
+    .service-cards {
+        grid-template-columns: repeat(2, 1fr);
+        padding: 0 20px;
+    }
+}
+
+@media (max-width: 576px) {
+    .service-cards {
+        grid-template-columns: 1fr;
+    }
+
+    .service-card img {
+        width: 100px;
+        height: 100px;
+    }
+}
+
+@media (max-width: 992px) {
+    .app-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .app-image {
+        justify-content: center;
+        margin-left: 0;
+        margin-bottom: 40px;
+        /* Add space between image and content on mobile */
+    }
+}
+
+@media (max-width: 480px) {
+    .phone-input {
+        flex-direction: column;
+    }
+
+    .store-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+}

@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lab Tests - Practo</title>
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/lab-tests.css" />
+
+    <nav class="navbar">
+      <div class="container">
+        <div class="logo">
+          <a href="/index.html"
+            ><img src="/images/practo.svg" alt="Practo"
+          /></a>
+        </div>
+
+        <div class="nav-links">
+          <a href="/pages/find-doctors.html">Find Doctors</a>
+          <a href="/pages/video-consult.html">Video Consult</a>
+          <a href="/pages/medicines.html">Medicines</a>
+          <a href="/pages/lab-tests.html">Lab Tests</a>
+          <a href="/pages/surgeries.html">Surgeries</a>
+        </div>
+        <div class="nav-right">
+          <a href="/pages/login.html" target="_blank" class="login-btn"
+            >Login / Signup</a
+          >
+        </div>
+      </div>
+    </nav>
+  </head>
+  <body>
+    <!-- Search Bar -->
+    <div class="lab-searchbar">
+      <div class="container lab-searchbar-content">
+        <select class="lab-city-select">
+          <option>Mumbai</option>
+          <option>Bangalore</option>
+          <option>Delhi</option>
+          <option>Chennai</option>
+          <option>Kolkata</option>
+        </select>
+        <div class="lab-searchbox">
+          <input
+            type="text"
+            placeholder="Search for Tests, Packages and Profiles"
+          />
+          <i class="fa fa-search"></i>
+        </div>
+        <div class="lab-cart"><i class="fa fa-shopping-cart"></i> Cart</div>
+      </div>
+    </div>
+
+    <!-- Hero/Featured Test Banner -->
+    <section class="lab-hero">
+      <div class="container lab-hero-content">
+        <div class="lab-hero-left">
+          <h1>Young Indian Health Checkup</h1>
+          <p>
+            Includes <b>84 tests</b><br />Ideal for individuals aged
+            <b>15-40 yrs</b>
+          </p>
+          <a href="#" class="lab-btn">Know More</a>
+        </div>
+        <div class="lab-hero-right">
+          <img
+            src="/images/lab-tests-assets/hero-checkup.png"
+            alt="Health Checkup"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- Help/Contact Card -->
+    <div class="lab-help-card">
+      <div class="container lab-help-content">
+        <img
+          src="/images/lab-tests-assets/expert-avatar.jpg"
+          alt="Expert"
+          class="lab-help-avatar"
+        />
+        <div class="lab-help-text">
+          <span class="lab-help-title">Need help with booking your test?</span>
+          <span class="lab-help-desc">Our experts are here to help you</span>
+        </div>
+        <div class="lab-help-phone">
+          <i class="fa fa-phone"></i> +91 8045684087
+        </div>
+      </div>
+    </div>
+
+    <!-- Stats/We Do Great -->
+    <section class="lab-stats">
+      <div class="container lab-stats-grid">
+        <div class="lab-stat-item">
+          <img src="/images/lab-tests-assets/users.svg" alt="Users" />
+          <h3>15 Million users every month</h3>
+        </div>
+        <div class="lab-stat-item">
+          <img
+            src="/images/lab-tests-assets/professionals.svg"
+            alt="Professionals"
+          />
+          <h3>Trusted by 2,00,000 healthcare professionals</h3>
+        </div>
+        <div class="lab-stat-item">
+          <img src="/images/lab-tests-assets/cities.svg" alt="Cities" />
+          <h3>We serve in 9 cities</h3>
+        </div>
+      </div>
+    </section>
+
+    <!-- Customer Testimonial -->
+    <section class="lab-testimonial">
+      <div class="container">
+        <h2>Thousands of Happy Customers</h2>
+        <blockquote>
+          <p>
+            "Very professional phlebo. Excellent job in collecting the sample.
+            No pain at all. Got my report also within 24 hours."
+          </p>
+          <span class="lab-testimonial-user">Malathi Ganapathy</span>
+        </blockquote>
+      </div>
+    </section>
+
+    <!-- Why Book With Us -->
+    <section class="lab-whybook">
+      <div class="container lab-whybook-grid">
+        <div class="lab-whybook-item">
+          <img src="/images/lab-tests-assets/sample.svg" alt="Sample" />
+          <h4>Home sample collection for FREE</h4>
+          <p>
+            A certified professional will collect your sample from your
+            preferred location
+          </p>
+        </div>
+        <div class="lab-whybook-item">
+          <img src="/images/lab-tests-assets/report.svg" alt="Report" />
+          <h4>Get digital report within a day</h4>
+          <p>
+            Our labs ensure turn-around-time of 24 hours from specimen pickup
+          </p>
+        </div>
+        <div class="lab-whybook-item">
+          <img src="/images/lab-tests-assets/offer.svg" alt="Offers" />
+          <h4>Offers and affordable prices</h4>
+          <p>Get great discounts and offers on tests and packages.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- How It Works -->
+    <section class="lab-howitworks">
+      <div class="container">
+        <h2>How it works?</h2>
+        <div class="lab-howitworks-steps">
+          <div class="lab-howitworks-step">
+            <img src="/images/lab-tests-assets/search.svg" alt="Search" />
+            <p>
+              Search for tests and packages and seamlessly book a home sample
+              collection.
+            </p>
+          </div>
+          <div class="lab-howitworks-step">
+            <img
+              src="/images/lab-tests-assets/professional.svg"
+              alt="Professional"
+            />
+            <p>
+              We will send a certified professional to your place to assist you
+              with the sample collection
+            </p>
+          </div>
+          <div class="lab-howitworks-step">
+            <img src="/images/lab-tests-assets/report.svg" alt="Report" />
+            <p>
+              We will email you the reports. You can also access your reports
+              within your account on the Practo app
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Find Tests by Health Concern -->
+    <section class="lab-healthconcern">
+      <div class="container">
+        <h3>Find Tests by Health Concern</h3>
+        <div class="lab-healthconcern-icons">
+          <div class="health-icon">
+            <img src="/images/lab-tests-assets/fever.svg" alt="Fever" /><span
+              >Fever</span
+            >
+          </div>
+          <div class="health-icon">
+            <img
+              src="/images/lab-tests-assets/diabetes.svg"
+              alt="Diabetes"
+            /><span>Diabetes</span>
+          </div>
+          <div class="health-icon">
+            <img src="/images/lab-tests-assets/skin.svg" alt="Skin" /><span
+              >Skin</span
+            >
+          </div>
+          <div class="health-icon">
+            <img src="/images/lab-tests-assets/kidney.svg" alt="Kidney" /><span
+              >Kidney</span
+            >
+          </div>
+          <div class="health-icon">
+            <img
+              src="/images/lab-tests-assets/digestion.svg"
+              alt="Digestion"
+            /><span>Digestion</span>
+          </div>
+          <div class="health-icon">
+            <img src="/images/lab-tests-assets/cancer.svg" alt="Cancer" /><span
+              >Cancer</span
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Popular Health Checkup Packages -->
+    <section class="lab-packages">
+      <div class="container">
+        <h3>Popular Health Checkup Packages</h3>
+        <div class="lab-packages-grid">
+          <div class="package-card">
+            <img
+              src="/images/lab-tests-assets/family1.jpg"
+              alt="Annual Health Check - Platinum"
+            />
+            <div class="package-info">
+              <h4>Annual Health Check - Platinum</h4>
+              <span>Ideal for individuals aged 18 - 100 years</span>
+              <span>112 tests included</span>
+              <div class="package-price-row">
+                <span class="package-price">₹4999</span>
+                <span class="package-oldprice">₹6249</span>
+                <span class="package-discount">20% off</span>
+                <a href="#" class="lab-btn">Book Now</a>
+              </div>
+            </div>
+          </div>
+          <div class="package-card">
+            <img
+              src="/images/lab-tests-assets/family2.jpg"
+              alt="Basic Health Screening"
+            />
+            <div class="package-info">
+              <h4>Basic Health Screening</h4>
+              <span>Ideal for individuals aged 15 - 50 years</span>
+              <span>46 tests included</span>
+              <div class="package-price-row">
+                <span class="package-price">₹249</span>
+                <span class="package-oldprice">₹300</span>
+                <span class="package-discount">17% off</span>
+                <a href="#" class="lab-btn">Book Now</a>
+              </div>
+            </div>
+          </div>
+          <div class="package-card">
+            <img
+              src="/images/lab-tests-assets/family3.jpg"
+              alt="Comprehensive Full Body Check"
+            />
+            <div class="package-info">
+              <h4>Comprehensive Full Body Check</h4>
+              <span>Ideal for individuals aged 18 - 100 years</span>
+              <span>106 tests included</span>
+              <div class="package-price-row">
+                <span class="package-price">₹3499</span>
+                <span class="package-oldprice">₹4500</span>
+                <span class="package-discount">22% off</span>
+                <a href="#" class="lab-btn">Book Now</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Top Booked Diagnostic Tests -->
+    <section class="lab-diagnostics">
+      <div class="container">
+        <h3>Top Booked Diagnostic Tests</h3>
+        <div class="lab-diagnostics-grid">
+          <div class="diagnostic-card">
+            <h4>T3 T4 TSH</h4>
+            <span>Known as Thyroid Profile Total Blood</span>
+            <span>E-Reports on next day</span>
+            <span class="diagnostic-price">₹400</span>
+            <a href="#" class="lab-add-btn">ADD</a>
+          </div>
+          <div class="diagnostic-card">
+            <h4>Complete Blood Count</h4>
+            <span>Known as Complete Blood Count Automated Blood</span>
+            <span>E-Reports on next day</span>
+            <span class="diagnostic-price">₹300</span>
+            <a href="#" class="lab-add-btn">ADD</a>
+          </div>
+          <div class="diagnostic-card">
+            <h4>Lipid Profile</h4>
+            <span>Known as Lipid Profile Blood</span>
+            <span>E-Reports on next day</span>
+            <span class="diagnostic-price">₹434</span>
+            <a href="#" class="lab-add-btn">ADD</a>
+          </div>
+          <div class="diagnostic-card">
+            <h4>Liver Function Test</h4>
+            <span>Known as Liver Function Tests Blood</span>
+            <span>E-Reports on next day</span>
+            <span class="diagnostic-price">₹673</span>
+            <a href="#" class="lab-add-btn">ADD</a>
+          </div>
+          <div class="diagnostic-card">
+            <h4>HbA1c</h4>
+            <span>Known as Glycosylated Haemoglobin Blood</span>
+            <span>E-Reports on next day</span>
+            <span class="diagnostic-price">₹300</span>
+            <a href="#" class="lab-add-btn">ADD</a>
+          </div>
+          <div class="diagnostic-card">
+            <h4>Vitamin B 12</h4>
+            <span>Known as Vitamin B12 Conventional Blood</span>
+            <span>E-Reports on next day</span>
+            <span class="diagnostic-price">₹490</span>
+            <a href="#" class="lab-add-btn">ADD</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Top Booked Medical Tests -->
+    <section class="lab-medicaltests">
+      <div class="container">
+        <h3>
+          Top booked Medical tests
+          <span class="lab-cashback"
+            >Get 10% Health Cashback* <a href="#">T&C</a></span
+          >
+        </h3>
+        <div class="lab-medicaltests-grid">
+          <div class="medicaltest-card">
+            <img src="/images/lab-tests-assets/lipid.svg" alt="Lipid Profile" />
+            <h4>Lipid Profile</h4>
+            <ul>
+              <li>Ldl Cholesterol Test</li>
+              <li>Hdl Cholesterol Test</li>
+              <li>Vldl Cholesterol Test</li>
+              <li>Total Cholesterol Test</li>
+              <li>Triglycerides Blood Test</li>
+            </ul>
+            <a href="#" class="lab-btn">Book Now</a>
+          </div>
+          <div class="medicaltest-card">
+            <img src="/images/lab-tests-assets/liver.svg" alt="Liver Profile" />
+            <h4>Liver Profile</h4>
+            <ul>
+              <li>Gamma Glutamyl Transferase</li>
+              <li>Total Bilirubin</li>
+              <li>Ast Test</li>
+              <li>Alp Test</li>
+              <li>Albumin Test</li>
+            </ul>
+            <a href="#" class="lab-btn">Book Now</a>
+          </div>
+          <div class="medicaltest-card">
+            <img
+              src="/images/lab-tests-assets/bloodsugar.svg"
+              alt="Blood Sugar"
+            />
+            <h4>Blood Sugar</h4>
+            <ul>
+              <li>Hba1C Test</li>
+              <li>Fasting Blood Sugar Test</li>
+              <li>Random Blood Sugar Test</li>
+              <li>Blood Sugar Levels After Eating</li>
+              <li>Creatinine Test</li>
+            </ul>
+            <a href="#" class="lab-btn">Book Now</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Partner Labs -->
+    <section class="lab-partnerlabs">
+      <div class="container lab-partnerlabs-content">
+        <img
+          src="/images/lab-tests-assets/practo-labs-logo.png"
+          alt="Practo Labs"
+          class="lab-partner-logo"
+        />
+        <p>
+          Your tests will be conducted in one of our partner labs to ensure
+          highest accuracy of your reports.
+        </p>
+      </div>
+    </section>
+
+    <!-- App Download Banner Section -->
+    <section class="lab-appbanner">
+      <div class="container lab-appbanner-content">
+        <div class="lab-appbanner-left">
+          <img src="/images/lab-tests-assets/app-mockup.png" alt="App Mockup" />
+        </div>
+        <div class="lab-appbanner-right">
+          <h2>Download the Practo app</h2>
+          <p>Your home for health is one tap away.</p>
+          <p>
+            Book appointments, Order health products, Consult with a doctor
+            online, Book health checkups, store health records & read health
+            tips.
+          </p>
+          <form class="appbanner-form">
+            <span>Send the link to download the app</span>
+            <div class="phone-input">
+              <span>+91</span>
+              <input type="tel" placeholder="Enter phone number" />
+              <button type="submit">Send app link</button>
+            </div>
+          </form>
+          <div class="store-buttons">
+            <a href="#"
+              ><img src="/images/google-play.png" alt="Google Play"
+            /></a>
+            <a href="#"><img src="/images/app-store.png" alt="App Store" /></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Info Section -->
+    <section class="lab-info-section">
+      <div class="container">
+        <p>
+          Book <b>Diagnostic tests</b> near you with Practo Associate Labs, your
+          online lab test service provider for diagnostic, medical tests and
+          health checkup packages
+        </p>
+        <p>
+          Get all the benefits of <b>diagnostic centre</b> and
+          <b>pathology labs</b> right from the comfort of your home. With a
+          phlebotomy team to ensure speedy home sample collection, and
+          diagnostic services ranging from individual tests to complete health
+          checkup packages for Men, Women, Senior Citizens & Corporates. Practo
+          Associate Labs takes care of all your diagnostic needs.
+        </p>
+        <p>
+          <b>Wide Selection of Tests:</b> Practo Associate Labs covers a wide
+          array of tests like
+          <b>blood sugar tests, thyroid tests, pregnancy tests, allergy tests</b
+          >, lipid profile, liver profile, platelet count, VDRL test, vitamin
+          B12 deficiency test and more. Get details of all these tests such as
+          blood test cost, when to take the tests, why it is required, who
+          should take the test and what to do before taking the blood tests at
+          home.
+        </p>
+        <p>
+          <b>Sample Collection at Home:</b> Book blood tests online from your
+          home and our expert team of Practo Associate Labs technicians will
+          arrive at the pre-scheduled time to pick up your sample. Once you get
+          a <b>diagnostic test</b> done, you will receive your reports online.
+        </p>
+        <p>
+          <b>Digital Reports:</b> Get all your diagnostic reports emailed
+          directly to you with detailed <b>blood test</b> reports & secure
+          storage to easily access your medical records online.
+        </p>
+        <p>
+          <b>Full Body Health Checkup:</b> Keep your health and well being in
+          check with exclusive Health Checkup Packages like Men's Health
+          Package, Women's Health Package, Vitamin Package, Health Package for
+          Corporates, Diabetes Packages, Packages for Senior Citizens & more.
+          Get full details of all tests available in a package when booking
+          <b>online pathology tests.</b>
+        </p>
+        <p>
+          <b
+            >Practo Associate Labs provides services to the following cities:</b
+          >
+          Bangalore, Hyderabad, Chennai, Mumbai, Delhi, Pune, Kolkata, Navi
+          Mumbai, Thane, Gurgaon, Noida, Ahmedabad, Chandigarh, Ghaziabad,
+          Indore, Jaipur, Lucknow, Patna, Ernakulam, Bhubaneswar and Coimbatore.
+        </p>
+      </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-column">
+            <h3>Practo</h3>
+            <ul>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Blog</a></li>
+              <li><a href="#">Careers</a></li>
+              <li><a href="#">Press</a></li>
+              <li><a href="#">Contact Us</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-column">
+            <h3>For patients</h3>
+            <ul>
+              <li><a href="#">Search for doctors</a></li>
+              <li><a href="#">Search for clinics</a></li>
+              <li><a href="#">Search for hospitals</a></li>
+              <li><a href="#">Practo Plus</a></li>
+              <li><a href="#">Covid Hospital listing</a></li>
+              <li><a href="#">Practo Care Clinics</a></li>
+              <li><a href="#">Read health articles</a></li>
+              <li><a href="#">Read about medicines</a></li>
+              <li><a href="#">Practo drive</a></li>
+              <li><a href="#">Health app</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-column">
+            <h3>For doctors</h3>
+            <ul>
+              <li><a href="#">Practo Profile</a></li>
+            </ul>
+
+            <h3>For clinics</h3>
+            <ul>
+              <li><a href="#">Ray by Practo</a></li>
+              <li><a href="#">Practo Reach</a></li>
+              <li><a href="#">Ray Tab</a></li>
+              <li><a href="#">Practo Pro</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-column">
+            <h3>For hospitals</h3>
+            <ul>
+              <li><a href="#">Insta by Practo</a></li>
+              <li><a href="#">Qikwell by Practo</a></li>
+              <li><a href="#">Practo Profile</a></li>
+              <li><a href="#">Practo Reach</a></li>
+              <li><a href="#">Practo Drive</a></li>
+            </ul>
+
+            <h3>For Corporates</h3>
+            <ul>
+              <li><a href="#">Wellness Plans</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-column">
+            <h3>More</h3>
+            <ul>
+              <li><a href="#">Help</a></li>
+              <li><a href="#">Developers</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+              <li><a href="#">Terms & Conditions</a></li>
+              <li><a href="#">PCS T&C</a></li>
+              <li><a href="#">Healthcare Directory</a></li>
+              <li><a href="#">Practo Health Wiki</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-column">
+            <h3>Social</h3>
+            <ul class="social-links">
+              <li><a href="#">Facebook</a></li>
+              <li><a href="#">Twitter</a></li>
+              <li><a href="#">LinkedIn</a></li>
+              <li><a href="#">Youtube</a></li>
+              <li><a href="#">Github</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="container">
+          <div class="logo-white">
+            <img src="/images/practo.png" alt="Practo" />
+          </div>
+          <p>Copyright © 2017, Practo. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

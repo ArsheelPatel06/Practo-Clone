@@ -1,0 +1,817 @@
+.navbar {
+    background: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.logo img {
+    height: 40px;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #2d2d32;
+    margin: 0 15px;
+    font-size: 17px;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+    color: #14bef0;
+}
+
+.nav-right {
+    display: flex;
+    align-items: center;
+}
+
+.login-btn {
+    background: transparent;
+    border: 1.5px solid #14bef0;
+    color: #14bef0;
+    padding: 8px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.3s;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 17px;
+    font-weight: 500;
+}
+
+.login-btn:hover {
+    background: #14bef0;
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Footer Styles */
+.footer {
+    background: #28328c;
+    color: #fff;
+    padding: 60px 0 0;
+}
+
+.footer-content {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 30px;
+    margin-bottom: 40px;
+}
+
+.footer-column h3 {
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-column ul li {
+    margin-bottom: 12px;
+}
+
+.footer-column ul li a {
+    color: rgba(255, 255, 255, 0.8);
+    text-decoration: none;
+    font-size: 14px;
+    transition: color 0.2s;
+}
+
+.footer-column ul li a:hover {
+    color: #fff;
+}
+
+.footer-bottom {
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-bottom .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.logo-white img {
+    height: 30px;
+    margin-bottom: 10px;
+}
+
+.footer-bottom p {
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 14px;
+}
+
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+    }
+}
+
+/* --- LAB TESTS PAGE CUSTOM STYLES --- */
+
+.lab-searchbar {
+    background: #fff;
+    box-shadow: 0 2px 8px rgba(44, 62, 80, 0.06);
+    padding: 32px 0 24px 0;
+    margin-top: 70px;
+}
+
+.lab-searchbar-content {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.lab-city-select {
+    border: 1px solid #e6e6e6;
+    border-radius: 6px;
+    padding: 12px 18px;
+    font-size: 17px;
+    background: #fafbfc;
+    color: #222;
+}
+
+.lab-searchbox {
+    flex: 1;
+    position: relative;
+}
+
+.lab-searchbox input {
+    width: 100%;
+    padding: 12px 44px 12px 18px;
+    border: 1px solid #e6e6e6;
+    border-radius: 6px;
+    font-size: 17px;
+    background: #fafbfc;
+}
+
+.lab-searchbox i {
+    position: absolute;
+    right: 16px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #b0b0b0;
+    font-size: 20px;
+}
+
+.lab-cart {
+    border: 1px solid #e6e6e6;
+    border-radius: 6px;
+    padding: 12px 22px;
+    font-size: 17px;
+    background: #fafbfc;
+    color: #222;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+}
+
+.lab-hero {
+    background: #e6f0fa;
+    border-radius: 32px;
+    margin: 36px auto 0 auto;
+    max-width: 90vw;
+}
+
+.lab-hero-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 48px 40px 32px 40px;
+}
+
+.lab-hero-left h1 {
+    font-size: 2.2rem;
+    font-weight: 700;
+    margin-bottom: 12px;
+    color: #222;
+}
+
+.lab-hero-left p {
+    font-size: 1.1rem;
+    color: #444;
+    margin-bottom: 28px;
+}
+
+.lab-btn {
+    background: #14bef0;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    padding: 12px 32px;
+    font-size: 1.1rem;
+    font-weight: 500;
+    text-decoration: none;
+    transition: background 0.2s;
+    display: inline-block;
+}
+
+.lab-btn:hover {
+    background: #0e9fd8;
+}
+
+.lab-hero-right img {
+    max-width: 320px;
+    border-radius: 18px;
+}
+
+.lab-help-card {
+    background: #eaf8ff;
+    border-radius: 18px;
+    margin: 32px auto 0 auto;
+    max-width: 1100px;
+    padding: 18px 32px;
+}
+
+.lab-help-content {
+    display: flex;
+    align-items: center;
+    gap: 22px;
+}
+
+.lab-help-avatar {
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.lab-help-title {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #222;
+}
+
+.lab-help-desc {
+    display: block;
+    color: #555;
+    font-size: 1rem;
+}
+
+.lab-help-phone {
+    margin-left: auto;
+    font-size: 1.1rem;
+    color: #222;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.lab-help-phone i {
+    color: #14bef0;
+    font-size: 20px;
+}
+
+.lab-stats {
+    background: #f7f8fa;
+    padding: 48px 0 32px 0;
+    margin-top: 36px;
+}
+
+.lab-stats-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 32px;
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.lab-stat-item img {
+    width: 56px;
+    margin-bottom: 18px;
+}
+
+.lab-stat-item h3 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #222;
+}
+
+.lab-testimonial {
+    background: #fff;
+    padding: 48px 0 32px 0;
+    text-align: center;
+}
+
+.lab-testimonial h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 18px;
+}
+
+.lab-testimonial blockquote {
+    font-size: 1.2rem;
+    color: #222;
+    font-style: italic;
+    margin: 0 auto 12px auto;
+    max-width: 700px;
+}
+
+.lab-testimonial-user {
+    display: block;
+    color: #222;
+    font-weight: 600;
+    margin-top: 8px;
+}
+
+.lab-whybook {
+    background: #f7f8fa;
+    padding: 48px 0 32px 0;
+}
+
+.lab-whybook-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 32px;
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.lab-whybook-item img {
+    width: 48px;
+    margin-bottom: 16px;
+}
+
+.lab-whybook-item h4 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #222;
+    margin-bottom: 8px;
+}
+
+.lab-whybook-item p {
+    color: #555;
+    font-size: 1rem;
+}
+
+.lab-howitworks {
+    background: #fff;
+    padding: 48px 0 32px 0;
+}
+
+.lab-howitworks h2 {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 32px;
+}
+
+.lab-howitworks-steps {
+    display: flex;
+    justify-content: center;
+    gap: 48px;
+}
+
+.lab-howitworks-step {
+    text-align: center;
+    max-width: 260px;
+}
+
+.lab-howitworks-step img {
+    width: 48px;
+    margin-bottom: 16px;
+}
+
+.lab-howitworks-step p {
+    color: #555;
+    font-size: 1rem;
+}
+
+.lab-healthconcern {
+    background: #fff;
+    padding: 32px 0 0 0;
+}
+
+.lab-healthconcern h3 {
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin-bottom: 18px;
+    color: #222;
+}
+
+.lab-healthconcern-icons {
+    display: flex;
+    gap: 32px;
+    overflow-x: auto;
+    padding-bottom: 12px;
+}
+
+.health-icon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 90px;
+    gap: 8px;
+}
+
+.health-icon img {
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    background: #e6f0fa;
+    padding: 8px;
+}
+
+.health-icon span {
+    font-size: 1rem;
+    color: #222;
+    margin-top: 4px;
+}
+
+.lab-packages {
+    background: #fff;
+    padding: 48px 0 32px 0;
+}
+
+.lab-packages h3 {
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin-bottom: 24px;
+    color: #222;
+}
+
+.lab-packages-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 32px;
+}
+
+.package-card {
+    background: #f7f8fa;
+    border-radius: 18px;
+    box-shadow: 0 2px 8px rgba(44, 62, 80, 0.06);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.package-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.package-info {
+    padding: 18px 18px 12px 18px;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.package-info h4 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #222;
+}
+
+.package-price-row {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-top: 10px;
+}
+
+.package-price {
+    color: #222;
+    font-weight: 700;
+    font-size: 1.1rem;
+}
+
+.package-oldprice {
+    color: #b0b0b0;
+    text-decoration: line-through;
+    font-size: 1rem;
+}
+
+.package-discount {
+    color: #14bef0;
+    font-weight: 600;
+    font-size: 1rem;
+}
+
+.lab-diagnostics {
+    background: #fff;
+    padding: 48px 0 32px 0;
+}
+
+.lab-diagnostics h3 {
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin-bottom: 24px;
+    color: #222;
+}
+
+.lab-diagnostics-grid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 18px;
+}
+
+.diagnostic-card {
+    background: #f7f8fa;
+    border-radius: 14px;
+    box-shadow: 0 2px 8px rgba(44, 62, 80, 0.06);
+    padding: 18px 12px 18px 18px;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    align-items: flex-start;
+}
+
+.diagnostic-card h4 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #222;
+}
+
+.diagnostic-price {
+    color: #222;
+    font-weight: 700;
+    font-size: 1.1rem;
+}
+
+.lab-add-btn {
+    color: #14bef0;
+    font-weight: 600;
+    font-size: 1rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+    margin-top: 8px;
+    text-decoration: none;
+}
+
+.lab-add-btn:hover {
+    text-decoration: underline;
+}
+
+.lab-medicaltests {
+    background: #fff;
+    padding: 48px 0 32px 0;
+}
+
+.lab-medicaltests h3 {
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin-bottom: 24px;
+    color: #222;
+}
+
+.lab-cashback {
+    color: #14bef0;
+    font-size: 1rem;
+    font-weight: 500;
+    margin-left: 12px;
+}
+
+.lab-medicaltests-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 32px;
+}
+
+.medicaltest-card {
+    background: #f7f8fa;
+    border-radius: 18px;
+    box-shadow: 0 2px 8px rgba(44, 62, 80, 0.06);
+    padding: 24px 18px 18px 18px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.medicaltest-card img {
+    width: 48px;
+    margin-bottom: 10px;
+}
+
+.medicaltest-card h4 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #222;
+}
+
+.medicaltest-card ul {
+    margin: 0 0 10px 0;
+    padding-left: 18px;
+    color: #555;
+    font-size: 1rem;
+}
+
+.lab-partnerlabs {
+    background: #fff;
+    padding: 32px 0 32px 0;
+    text-align: center;
+}
+
+.lab-partnerlabs-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+}
+
+.lab-partner-logo {
+    width: 120px;
+    margin-bottom: 8px;
+}
+
+.lab-partnerlabs-content p {
+    color: #222;
+    font-size: 1.1rem;
+}
+
+.lab-appbanner {
+    background: #f7f8fa;
+    padding: 48px 0 32px 0;
+}
+
+.lab-appbanner-content {
+    display: flex;
+    align-items: center;
+    gap: 48px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.lab-appbanner-left img {
+    width: 220px;
+    border-radius: 18px;
+}
+
+.lab-appbanner-right h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.lab-appbanner-right p {
+    color: #222;
+    font-size: 1.1rem;
+    margin-bottom: 8px;
+}
+
+.appbanner-form {
+    margin: 18px 0 12px 0;
+}
+
+.phone-input {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: 8px;
+}
+
+.phone-input input {
+    padding: 10px 12px;
+    border: 1px solid #e6e6e6;
+    border-radius: 6px;
+    font-size: 1rem;
+    width: 180px;
+}
+
+.phone-input button {
+    background: #14bef0;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    padding: 10px 18px;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    margin-left: 8px;
+}
+
+.phone-input button:hover {
+    background: #0e9fd8;
+}
+
+.store-buttons {
+    display: flex;
+    gap: 16px;
+    margin-top: 10px;
+}
+
+.store-buttons img {
+    height: 40px;
+}
+
+.lab-info-section {
+    background: #fff;
+    padding: 32px 0 32px 0;
+    color: #222;
+    font-size: 1.1rem;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.lab-info-section b {
+    color: #222;
+}
+
+/* Responsive Styles */
+@media (max-width: 1100px) {
+
+    .lab-hero-content,
+    .lab-appbanner-content {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 32px;
+        padding: 32px 16px 24px 16px;
+    }
+
+    .lab-hero-right img,
+    .lab-appbanner-left img {
+        max-width: 100%;
+    }
+
+    .lab-searchbar-content {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 12px;
+    }
+}
+
+@media (max-width: 900px) {
+
+    .lab-stats-grid,
+    .lab-whybook-grid,
+    .lab-packages-grid,
+    .lab-medicaltests-grid {
+        grid-template-columns: 1fr;
+        gap: 24px;
+    }
+
+    .lab-diagnostics-grid {
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 12px;
+    }
+}
+
+@media (max-width: 600px) {
+
+    .lab-hero,
+    .lab-help-card,
+    .lab-appbanner,
+    .lab-info-section {
+        border-radius: 0;
+        padding: 18px 0;
+    }
+
+    .lab-hero-content,
+    .lab-appbanner-content {
+        padding: 18px 0 12px 0;
+    }
+
+    .lab-packages-grid,
+    .lab-medicaltests-grid,
+    .lab-diagnostics-grid {
+        grid-template-columns: 1fr;
+        gap: 12px;
+    }
+
+    .lab-stats,
+    .lab-whybook,
+    .lab-howitworks,
+    .lab-testimonial {
+        padding: 24px 0 12px 0;
+    }
+
+    .lab-healthconcern-icons {
+        gap: 12px;
+    }
+}
