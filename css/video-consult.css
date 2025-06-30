@@ -638,14 +638,20 @@
     gap: 24px;
     flex-wrap: wrap;
     justify-content: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
 }
 
 .experience-grid iframe {
-    width: 340px;
-    height: 200px;
+    flex: 1;
+    min-width: 300px;
+    width: 100%;
+    height: 400px;
     border-radius: 12px;
     box-shadow: 0 2px 8px rgba(40, 50, 140, 0.06);
     border: none;
+    aspect-ratio: 16/9;
 }
 
 /* Testimonials Section */
@@ -809,219 +815,268 @@
     font-weight: 500;
 }
 
-/* App Download Banner Section */
-.appbanner-section {
-    background: #232323;
-    color: #fff;
-    padding: 48px 0 0 0;
-    margin-top: 48px;
+/* App Download Banner - Refined Styles for Screenshot Accuracy */
+.appbanner-gray-bg {
+    background: #f5f5fa;
 }
 
 .appbanner-content {
     display: flex;
-    align-items: flex-start;
-    justify-content: space-between;
-    gap: 40px;
-    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 80px;
+    padding: 80px 0 64px 0;
 }
 
-.appbanner-left {
-    flex: 1 1 320px;
+.appbanner-phones {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 0;
+    min-width: 340px;
+    margin-right: 32px;
 }
 
-.appbanner-left h2 {
-    font-size: 28px;
-    font-weight: 700;
-    margin-bottom: 8px;
-}
-
-.appbanner-left p {
-    color: #bfc6d1;
-    font-size: 16px;
-    margin-bottom: 18px;
+.appbanner-phone {
+    width: 340px;
+    max-width: 44vw;
+    box-shadow: 0 8px 32px rgba(44, 62, 80, 0.13);
+    border-radius: 32px;
+    background: none;
 }
 
 .appbanner-right {
-    flex: 1 1 320px;
+    min-width: 380px;
+    max-width: 520px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .appbanner-right h2 {
-    font-size: 28px;
+    font-size: 2.6rem;
+    font-weight: 800;
+    margin-bottom: 10px;
+    color: #222;
+    letter-spacing: -1px;
+}
+
+.appbanner-cash {
+    color: #222;
+    font-size: 1.25rem;
     font-weight: 700;
-    margin-bottom: 8px;
-    color: #fff;
+    margin-bottom: 28px;
 }
 
-.appbanner-right p {
-    color: #1ecb4f;
-    font-size: 18px;
-    margin-bottom: 8px;
-}
-
-.appbanner-right ul {
-    color: #bfc6d1;
-    font-size: 16px;
-    margin-bottom: 18px;
+.appbanner-checklist {
     list-style: none;
+    padding: 0;
+    margin: 0 0 36px 0;
 }
 
-.appbanner-right ul li {
-    margin-bottom: 6px;
-}
-
-.appbanner-form {
+.appbanner-checklist li {
+    font-size: 1.18rem;
+    color: #222;
     margin-bottom: 18px;
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    font-weight: 500;
 }
 
-.appbanner-form span {
-    color: #bfc6d1;
-    font-size: 15px;
+.checkmark {
+    color: #14bef0;
+    font-size: 1.3em;
+    font-weight: bold;
+    margin-right: 8px;
+}
+
+.appbanner-form-label {
     display: block;
-    margin-bottom: 6px;
+    font-size: 1.08rem;
+    color: #222;
+    margin-bottom: 12px;
+    font-weight: 500;
 }
 
 .phone-input {
     display: flex;
     align-items: center;
+    gap: 0;
+    margin-bottom: 24px;
     background: #fff;
-    border-radius: 6px;
-    padding: 0 12px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(44, 62, 80, 0.06);
     border: 1px solid #e6e6e6;
-    height: 48px;
-    max-width: 320px;
-    margin-bottom: 8px;
+    overflow: hidden;
+    max-width: 370px;
 }
 
 .phone-input span {
-    color: #232323;
-    font-size: 16px;
-    margin-right: 8px;
+    background: #fff;
+    border: none;
+    border-radius: 0;
+    padding: 14px 16px;
+    font-size: 1.08rem;
+    color: #222;
+    font-weight: 500;
 }
 
 .phone-input input {
     border: none;
+    border-radius: 0;
+    padding: 14px 16px;
+    font-size: 1.08rem;
+    width: 160px;
     outline: none;
-    font-size: 16px;
-    background: transparent;
-    width: 100%;
-    color: #232323;
+    background: #fff;
 }
 
 .phone-input button {
     background: #14bef0;
     color: #fff;
     border: none;
-    border-radius: 6px;
-    padding: 10px 18px;
-    font-size: 15px;
-    font-weight: 500;
+    border-radius: 0 8px 8px 0;
+    padding: 14px 28px;
+    font-size: 1.08rem;
+    font-weight: 600;
     cursor: pointer;
-    margin-left: 8px;
+    margin-left: 0;
     transition: background 0.2s;
+    white-space: nowrap;
 }
 
 .phone-input button:hover {
-    background: #0d9bc7;
+    background: #0e9fd8;
 }
 
 .store-buttons {
     display: flex;
-    gap: 18px;
+    gap: 28px;
+    margin-top: 18px;
 }
 
 .store-buttons img {
-    height: 48px;
-    transition: transform 0.2s;
+    height: 54px;
+    width: auto;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(44, 62, 80, 0.08);
 }
 
-.store-buttons img:hover {
-    transform: scale(1.08);
+@media (max-width: 1100px) {
+    .appbanner-content {
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+        padding: 40px 0 24px 0;
+    }
+
+    .appbanner-phones {
+        margin-right: 0;
+        min-width: 0;
+    }
+
+    .appbanner-phone {
+        width: 220px;
+        max-width: 44vw;
+    }
+}
+
+@media (max-width: 700px) {
+    .appbanner-content {
+        flex-direction: column;
+        gap: 18px;
+        padding: 18px 0 12px 0;
+    }
+
+    .appbanner-phones {
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 18px;
+    }
+
+    .appbanner-phone {
+        width: 38vw;
+        min-width: 100px;
+        max-width: 120px;
+        border-radius: 16px;
+    }
+
+    .appbanner-right {
+        min-width: 0;
+        max-width: 100%;
+        align-items: center;
+        text-align: center;
+    }
+
+    .store-buttons {
+        justify-content: center;
+    }
 }
 
 /* Responsive Styles */
-@media (max-width: 1024px) {
-
-    .consult-hero-content,
-    .appbanner-content {
-        flex-direction: column;
-        gap: 32px;
-        align-items: flex-start;
-    }
-
-    .specialities-grid,
-    .concerns-grid,
-    .offers-grid,
-    .doctors-grid,
-    .testimonials-grid,
-    .queries-grid,
+@media (max-width: 1200px) {
     .experience-grid {
-        flex-direction: column;
-        gap: 18px;
+        padding: 0 24px;
+        gap: 20px;
     }
 
-    .howitworks-steps {
+    .experience-grid iframe {
+        min-width: calc(33.33% - 16px);
+    }
+}
+
+@media (max-width: 1024px) {
+    .experience-section {
+        padding: 40px 0;
+    }
+
+    .experience-grid {
+        grid-template-columns: repeat(2, 1fr);
         gap: 24px;
     }
 
-    .statsbar-grid {
-        flex-direction: column;
-        gap: 18px;
+    .experience-grid iframe {
+        min-width: 100%;
+        height: 350px;
     }
 }
 
 @media (max-width: 768px) {
-    .consult-hero-left h1 {
-        font-size: 24px;
+    .experience-section {
+        padding: 32px 0;
     }
 
-    .specialities-header h2,
-    .concerns-header h2,
-    .doctors-section h2,
-    .howitworks-section h2,
-    .statsbar-item h3,
-    .appbanner-left h2,
-    .appbanner-right h2 {
-        font-size: 20px;
+    .experience-grid {
+        grid-template-columns: 1fr;
+        padding: 0 16px;
+        gap: 20px;
     }
 
-    .speciality-card,
-    .concern-card,
-    .doctor-card,
-    .offer-card,
-    .testimonial-card,
-    .query-item {
-        min-width: 100%;
-        max-width: 100%;
+    .experience-grid iframe {
+        height: 300px;
     }
 }
 
 @media (max-width: 480px) {
-
-    .consult-hero-content,
-    .appbanner-content {
-        gap: 12px;
-        padding: 0 8px;
+    .experience-section {
+        padding: 24px 0;
     }
 
-    .specialities-section,
-    .concerns-section,
-    .offers-section,
-    .doctors-section,
-    .howitworks-section,
-    .statsbar-section,
-    .benefits-section,
-    .experience-section,
-    .testimonials-section,
-    .faqs-section,
-    .queries-section,
-    .appbanner-section {
-        padding: 24px 0 0 0;
+    .experience-grid {
+        padding: 0 12px;
+        gap: 16px;
     }
 
-    .specialities-header,
-    .concerns-header {
-        flex-direction: column;
-        gap: 8px;
-        align-items: flex-start;
+    .experience-grid iframe {
+        height: 250px;
+    }
+
+    .section-title {
+        font-size: 24px;
+        margin-bottom: 20px;
+        padding: 0 16px;
     }
 }

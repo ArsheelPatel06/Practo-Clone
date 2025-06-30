@@ -20,6 +20,15 @@
     <!-- Navigation -->
     <nav class="navbar">
       <div class="container">
+        <button
+          class="mobile-menu-btn"
+          id="mobileMenuBtn"
+          aria-label="Open menu"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
         <div class="logo">
           <a href="index.html"><img src="images/practo.svg" alt="Practo" /></a>
         </div>
@@ -27,7 +36,7 @@
           <a href="/pages/find-doctors.html" class="active">Find Doctors</a>
           <a href="/pages/video-consult.html">Video Consult</a>
           <a href="/pages/medicines.html">Medicines</a>
-          <a href="/pages/lab-tests.html">Lab Tests<x/a>
+          <a href="/pages/lab-tests.html">Lab Tests</a>
           <a href="/pages/surgeries.html">Surgeries</a>
         </div>
         <div class="nav-right">
@@ -37,6 +46,21 @@
         </div>
       </div>
     </nav>
+    <!-- Side Drawer and Overlay -->
+    <div class="drawer-overlay" id="drawerOverlay"></div>
+    <aside class="side-drawer" id="sideDrawer">
+      <button class="drawer-close" id="drawerCloseBtn" aria-label="Close menu">
+        &times;
+      </button>
+      <nav>
+        <a href="/pages/find-doctors.html">Find Doctors</a>
+        <a href="/pages/video-consult.html">Video Consult</a>
+        <a href="/pages/medicines.html">Medicines</a>
+        <a href="/pages/lab-tests.html">Lab Tests</a>
+        <a href="/pages/surgeries.html">Surgeries</a>
+        <a href="/pages/login.html">Login / Signup</a>
+      </nav>
+    </aside>
 
     <!-- Search Section -->
     <section class="search-section">

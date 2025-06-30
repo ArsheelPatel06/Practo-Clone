@@ -1,5 +1,5 @@
 // Search functionality
-document.getElementById('searchInput').addEventListener('input', function(e) {
+document.getElementById('searchInput').addEventListener('input', function (e) {
     // Add search logic here
     console.log('Searching for:', e.target.value);
 });
@@ -21,9 +21,9 @@ function exploreSurgeries() {
 }
 
 // Mobile number validation for app download
-document.querySelector('.get-app button').addEventListener('click', function() {
+document.querySelector('.get-app button').addEventListener('click', function () {
     const phoneInput = document.querySelector('.get-app input').value;
-    if(/^\d{10}$/.test(phoneInput)) {
+    if (/^\d{10}$/.test(phoneInput)) {
         alert('SMS sent successfully!');
     } else {
         alert('Please enter a valid 10-digit phone number');
@@ -39,3 +39,31 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         });
     });
 });
+
+// Mobile Side Drawer Menu Logic
+const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+const sideDrawer = document.getElementById('sideDrawer');
+const drawerOverlay = document.getElementById('drawerOverlay');
+const drawerCloseBtn = document.getElementById('drawerCloseBtn');
+
+function openDrawer() {
+    sideDrawer.classList.add('open');
+    drawerOverlay.classList.add('open');
+    document.body.style.overflow = 'hidden';
+}
+
+function closeDrawer() {
+    sideDrawer.classList.remove('open');
+    drawerOverlay.classList.remove('open');
+    document.body.style.overflow = '';
+}
+
+if (mobileMenuBtn && sideDrawer && drawerOverlay && drawerCloseBtn) {
+    mobileMenuBtn.addEventListener('click', openDrawer);
+    drawerCloseBtn.addEventListener('click', closeDrawer);
+    drawerOverlay.addEventListener('click', closeDrawer);
+    // Optional: close drawer on ESC key
+    document.addEventListener('keydown', function (e) {
+        if (e.key === 'Escape') closeDrawer();
+    });
+}
